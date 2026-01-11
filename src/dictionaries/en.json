@@ -1,0 +1,453 @@
+{
+  "nav": {
+    "home": "Home",
+    "auction": "Auction",
+    "about": "About Us",
+    "features": "Features",
+    "preview": "App Preview",
+    "faqs": "FAQs",
+    "register": "Register",
+    "language": "English",
+    "locales": {
+      "en": "English",
+      "ar": "Arabic"
+    }
+  },
+  "common": {
+    "android": "Download for Android",
+    "ios": "Download for iOS"
+  },
+  "hero": {
+    "titlePrefix": "Your ",
+    "titleAccent": "Ultimate UAE",
+    "titleSuffix": " Marketplace",
+    "subtitle": "Buy, sell, trade anything and find your dream job in Dubai. Join over 100K+ users who trust Looking for all their marketplace needs.",
+    "androidBtn": "Download for Android",
+    "iosBtn": "Download for iOS"
+  },
+  "auction": {
+    "title": "Live Auction Experience Like Never Before",
+    "subtitle": "Experience real-time bidding, instant negotiations, and exclusive deals. Download our app to start bidding now.",
+    "cards": {
+      "download": {
+        "title": "Download App First",
+        "description": "Get exclusive access to live auctions, real-time bidding, and premium features. Join thousands of successful buyers and sellers."
+      },
+      "realtime": {
+        "title": "Real-Time Bidding",
+        "description": "Place instant bids, watch prices rise, and compete with others in live auctions that move at lightning speed."
+      },
+      "negotiate": {
+        "title": "Negotiate Instantly",
+        "description": "Message sellers and buyers in real-time to negotiate final prices and close deals faster than ever before."
+      },
+      "track": {
+        "title": "Track Your Wins",
+        "description": "Monitor all your winning bids, auction history, and get personalized recommendations based on your preferences."
+      },
+      "secure": {
+        "title": "100% Secure",
+        "description": "All transactions protected with buyer and seller guarantees. Trade with confidence on our trusted platform."
+      },
+      "join": {
+        "title": "Join Thousands",
+        "description": "Be part of UAE's fastest-growing marketplace. Start winning auctions today."
+      }
+    }
+  },
+  "about": {
+    "title": "UAE's Most Trusted Marketplace",
+    "description": "We're the region's most trusted multi-category marketplace, connecting millions of buyers and sellers with a mission to make online trading safe, simple, and secure.",
+    "features": [
+      {
+        "title": "Founded in 2025",
+        "description": "Serving UAE with integrity and excellence"
+      },
+      {
+        "title": "Direct Messaging",
+        "description": "Communicate with buyers and sellers to negotiate the best prices instantly"
+      },
+      {
+        "title": "Buyer Protection Guarantee",
+        "description": "100% secure transactions with money-back guarantee"
+      },
+      {
+        "title": "24/7 Customer Support",
+        "description": "Available in Arabic and English"
+      }
+    ],
+    "stats": [
+      {
+        "label": "Daily Listings",
+        "value": "100K+"
+      },
+      {
+        "label": "Items Sold",
+        "value": "75K+"
+      },
+      {
+        "label": "Satisfaction Rate",
+        "value": "98%"
+      }
+    ]
+  },
+  "categories": {
+    "title": "Everything You Need in One App",
+    "subtitle": "From jobs to auctions, we have all the categories you need to buy, sell, or trade",
+    "list": [
+      {
+        "title": "Jobs",
+        "description": "Find Opportunities Or Hire Talent",
+        "listings": "1.2K+ Listings",
+        "type": "blue"
+      },
+      {
+        "title": "Trade",
+        "description": "Buy And Sell Tools & Equipment",
+        "listings": "5.3K+ Listings",
+        "type": "yellow"
+      },
+      {
+        "title": "Buy",
+        "description": "Shop From Verified Sellers",
+        "listings": "12.5K+ Listings",
+        "type": "blue"
+      },
+      {
+        "title": "Sell",
+        "description": "List Items And Earn Quickly",
+        "listings": "8.7K+ Listings",
+        "type": "yellow"
+      },
+      {
+        "title": "Auctions",
+        "description": "Bid On Exclusive Items",
+        "listings": "3.2K+ Listings",
+        "type": "blue"
+      }
+    ]
+  },
+  "howItWorks": {
+    "title": "How Looking Works",
+    "subtitle": "Get started in minutes with our simple 4-step process. From download to your first successful transaction.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Download & Register",
+        "description": "Get The App From App Store Or Google Play And Create Your Account In Seconds",
+        "type": "blue"
+      },
+      {
+        "number": "02",
+        "title": "Browse & Search",
+        "description": "Explore Thousands Of Items And Jobs, Or Post Your Own Listings Instantly",
+        "type": "yellow"
+      },
+      {
+        "number": "03",
+        "title": "Connect & Chat",
+        "description": "Use Our Secure Messaging To Communicate With Buyers, Sellers, And Employers",
+        "type": "blue"
+      },
+      {
+        "number": "04",
+        "title": "Complete & Review",
+        "description": "Finalize Your Deal Safely And Leave Reviews To Help The Community",
+        "type": "yellow"
+      }
+    ]
+  },
+  "whyChoose": {
+    "title": "Why Choose Looking?",
+    "subtitle": "Everything you need for a seamless buying and selling experience",
+    "list": [
+      {
+        "title": "Live Auctions",
+        "description": "Real-Time Bidding With Transparent Pricing And Instant Updates",
+        "type": "blue"
+      },
+      {
+        "title": "Secure Trading",
+        "description": "Buyer Protection Guarantee And Verified Seller Verification",
+        "type": "yellow"
+      },
+      {
+        "title": "Instant Listings",
+        "description": "List Items In Seconds And Reach Thousands Of Buyers Instantly",
+        "type": "blue"
+      },
+      {
+        "title": "Community Trust",
+        "description": "Ratings, Reviews, And Verified Profiles For Every Transaction",
+        "type": "yellow"
+      }
+    ]
+  },
+  "premiumAds": {
+    "title": "Boost Your Visibility with Premium Ads",
+    "subtitle": "Get featured placement, priority visibility, and reach more buyers. Premium sellers sell 3x faster on average.",
+    "checklist": [
+      "Featured listings on homepage",
+      "Top placement in search results",
+      "Verified seller badge",
+      "Advanced analytics dashboard",
+      "Priority customer support"
+    ],
+    "cards": [
+      {
+        "title": "3x More Views",
+        "desc": "Premium listings get 3x more exposure",
+        "type": "grey"
+      },
+      {
+        "title": "Faster Sales",
+        "desc": "Sell items 3x faster on average",
+        "type": "blue"
+      },
+      {
+        "title": "More Buyers",
+        "desc": "Access to premium audience",
+        "type": "blue"
+      },
+      {
+        "title": "Top Placement",
+        "desc": "Featured on homepage",
+        "type": "grey"
+      }
+    ]
+  },
+  "appChoice": {
+    "title": "Why Will You Choose Our Application",
+    "subtitle": "Because it's fast, secure, and built to make your life easier.",
+    "center": {
+      "value": "15K+",
+      "label": "Verified Users"
+    },
+    "orbitCards": [
+      {
+        "title": "Sell Faster",
+        "description": "Auctions create urgency that drives quick sales and faster transactions"
+      },
+      {
+        "title": "Get Better Prices",
+        "description": "Competitive bidding often results in prices higher than fixed pricing"
+      },
+      {
+        "title": "Fair Competition",
+        "description": "Every buyer has an equal chance to win with transparent, real-time bidding"
+      },
+      {
+        "title": "Find Great Deals",
+        "description": "Buyers can find items at competitive prices through strategic bidding"
+      }
+    ],
+    "bottomGrid": [
+      {
+        "title": "Creative Ideas",
+        "description": "Fresh, Innovative Concepts That Help Your Business Stand Out And Grow Faster.",
+        "color": "#005ce6"
+      },
+      {
+        "title": "Awesome Design",
+        "description": "Modern, User-Friendly Designs That Blend Beauty With Functionality.",
+        "color": "#e91e63"
+      },
+      {
+        "title": "Best Features",
+        "description": "Packed With Powerful Tools To Give You Efficiency, Control, And Results.",
+        "color": "#fbbc05"
+      },
+      {
+        "title": "Easy Solutions",
+        "description": "Simple Yet Smart Solutions That Make Complex Tasks Effortless.",
+        "color": "#00c853"
+      }
+    ]
+  },
+  "liveAuctionDemo": {
+    "title": "Live Auction Demo",
+    "subtitle": "See real-time bidding in action",
+    "labels": {
+      "currentBid": "Current Bid",
+      "timeLeftPrefix": "Ends in",
+      "recentBidTitle": "Recent Bid"
+    },
+    "product": {
+      "tag": "Watch",
+      "title": "Patek Philippe Nautilus 5711 Blue Dial",
+      "description": "A highly sought-after Nautilus with the classic blue dial. Comes with original box and papers. Condition is excellent with minimal signs of wear.",
+      "currentBid": "180,00 AED",
+      "timeLeft": "Ends in 2h 15m 32s"
+    },
+    "recentBids": {
+      "list": [
+        {
+          "name": "Muhammad Ahmad",
+          "time": "2 seconds ago",
+          "amount": "AED 850"
+        },
+        { "name": "Fatima Ali", "time": "15 seconds ago", "amount": "AED 800" },
+        {
+          "name": "Muhammad Kamran",
+          "time": "45 seconds ago",
+          "amount": "AED 750"
+        },
+        { "name": "Layla Hamza", "time": "1 Minute ago", "amount": "AED 700" }
+      ],
+      "cta": "Download App to Bid"
+    }
+  },
+  "experienceApp": {
+    "title": "Experience the App",
+    "subtitle": "A beautifully designed mobile app built for seamless auction experiences"
+  },
+  "auctionExperience": {
+    "title": "Auction Experience",
+    "subtitle": "Know the guidelines for fair and transparent auctions",
+    "proTipPrefix": "Pro Tip:",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Bid Requirements",
+        "description": "All Bids Are Placed Securely Through Our App. Minimum Increments Are Auto-Calculated. Making Bidding Fast, Fair, And Effortless.",
+        "primary": true
+      },
+      {
+        "number": "02",
+        "title": "Auction Duration",
+        "description": "Auctions Typically Run Between 1 To 30 Days, Closing Automatically At The Scheduled Time. Stay Tuned And Make Your Best Bid!",
+        "primary": false
+      },
+      {
+        "number": "03",
+        "title": "Reserve Price",
+        "description": "Some Items Have A Reserve Once Bids Meet Or Exceed It, The Sale Completes Successfully. Every Winning Bid Counts Toward Fair Value.",
+        "primary": false
+      },
+      {
+        "number": "04",
+        "title": "Buyer Obligations",
+        "description": "Winners Simply Complete Payment Within 48 Hours And Coordinate With The Seller For A Smooth Delivery Or Pickup.",
+        "primary": false
+      },
+      {
+        "number": "05",
+        "title": "Seller Responsibilities",
+        "description": "Sellers Ship Items Within 5 Business Days Or Arrange Pickup. Every Listing Should Match Its Description For A Trusted Experience.",
+        "primary": false
+      },
+      {
+        "number": "06",
+        "title": "Cancellation Policy",
+        "description": "Once Bidding Begins, Auctions Can't Be Cancelled Ensuring Fairness For All Participants. Transparency Builds Trust!",
+        "primary": false
+      }
+    ],
+    "proTip": "Every Auction Is Designed To Be Simple, Transparent, And Rewarding. Review Our Full Terms And Enjoy Confident Buying And Selling With Peace Of Mind."
+  },
+  "auctionTips": {
+    "title": "Auction Tips & Tricks",
+    "subtitle": "Maximize your success with expert advice",
+    "buyers": {
+      "title": "For Buyers",
+      "list": [
+        "Set a maximum bid amount before auction starts",
+        "Bid in the final seconds to avoid bidding wars",
+        "Check seller ratings and item condition carefully",
+        "Use auto-bid feature for hands-free bidding"
+      ]
+    },
+    "sellers": {
+      "title": "For Sellers",
+      "list": [
+        "Use high-quality photos and detailed descriptions",
+        "Set competitive starting prices to attract bidders",
+        "Choose optimal auction duration",
+        "Respond quickly to buyer inquiries during auction"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about using Looking for buying, selling, and finding jobs in Dubai.",
+    "list": [
+      {
+        "id": "01",
+        "question": "Is Looking free to use?",
+        "answer": "Yes, Looking is free to download and browse. We offer premium features for users who want more visibility."
+      },
+      {
+        "id": "02",
+        "question": "How do you verify users?",
+        "answer": "Emirates ID verification for UAE residents ensures a safer marketplace."
+      },
+      {
+        "id": "03",
+        "question": "Are payments secure?",
+        "answer": "We use industry-standard encryption and trusted payment gateways to ensure all transactions are secure."
+      },
+      {
+        "id": "04",
+        "question": "What can I buy or sell?",
+        "answer": "You can buy and sell almost anything, from electronics and furniture to real estate and jobs."
+      },
+      {
+        "id": "05",
+        "question": "Is there an Arabic version?",
+        "answer": "Yes, we are working on localizing the app to support Arabic and other languages."
+      }
+    ]
+  },
+  "features": {
+    "title": "Our Features",
+    "subtitle": "Everything you need to scale your vision.",
+    "list": [
+      {
+        "title": "Fast Performance",
+        "description": "Blazing fast load times and optimized workflows."
+      },
+      {
+        "title": "Secure by Design",
+        "description": "Enterprise-grade security integrated into every layer."
+      },
+      {
+        "title": "Scalable Infrastructure",
+        "description": "Grow your business without worrying about the backend."
+      }
+    ]
+  },
+  "reviews": {
+    "title": "What Our Users Say",
+    "loading": "Fetching latest stories...",
+    "error": "Failed to load reviews. Please try again later."
+  },
+  "cta": {
+    "tag": "Download Looking Today",
+    "title": "Are you ready to start?",
+    "subtitle": "Available on all platforms. Download Looking today and join Dubai's most trusted marketplace community."
+  },
+  "footer": {
+    "whatsappCard": {
+      "title": "Keep up with the latest",
+      "subtitle": "Get real-time updates on auctions, new listings, deals, and exclusive offers directly through our WhatsApp channel.",
+      "inputLabel": "Enter your Phone Number:",
+      "inputPlaceholder": "+971 50 XXX XXXX",
+      "button": "Join on WhatsApp",
+      "legal": "Join WhatsApp updates. By subscribing, you agree to our",
+      "privacyLink": "Privacy Policy"
+    },
+    "nav": [
+      { "label": "Home", "href": "#" },
+      { "label": "About Us", "href": "#" },
+      { "label": "Features", "href": "#" },
+      { "label": "App Preview", "href": "#" },
+      { "label": "FAQs", "href": "#" }
+    ],
+    "links": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms & Condition",
+      "delete": "Delete Account"
+    },
+    "rights": "© 2025 Looking. All Right Reserved"
+  }
+}

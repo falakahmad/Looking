@@ -1,0 +1,232 @@
+/* Main Section Wrapper */
+.section {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(60deg, #1d5fe8 13.4%, #003087 86.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 200;
+  color: #1a1a1c;
+}
+
+/* Flex Container for the two Demo Cards */
+.flexContainer {
+  display: flex;
+  gap: 20px;
+  max-width: 1267px;
+  margin: 0 auto;
+}
+
+/* Base Card Styling */
+.card {
+  background: #f6f7f9;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px 0px #00000026;
+  box-sizing: border-box;
+}
+
+/* Left Card: Product View */
+.leftCard {
+  width: 443px;
+  height: 520px;
+  padding: 21px 29px;
+  display: flex;
+  flex-direction: column;
+}
+
+.productImageContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.productImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #1d5fe8;
+}
+
+.productTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d5fe8;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+.productDesc {
+  font-size: 14px;
+  color: #1a1a1c;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.bidInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bidLabel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1d5fe8;
+}
+
+.bidValue {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a1a1c;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.timerRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1d5fe8;
+}
+
+/* Right Card: Recent Bids List */
+.rightCard {
+  width: 804px;
+  height: 520px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.cardHeader {
+  padding: 25px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.recentBidTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1d5fe8;
+}
+
+.bidsList {
+  flex: 1;
+}
+
+.bidItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.bidderName {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a1a1c;
+}
+
+.bidTime {
+  font-size: 13px;
+  color: #666;
+  margin-top: 4px;
+}
+
+.bidAmount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1d5fe8;
+}
+
+.cardFooter {
+  padding: 20px 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1d5fe8;
+}
+
+.appBtns {
+  display: flex;
+  gap: 12px;
+}
+
+/* Responsiveness */
+@media (max-width: 1251px) {
+  .flexContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .leftCard,
+  .rightCard {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  .rightCard {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+  }
+  .cardFooter {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .appBtns {
+    flex-direction: column;
+    width: 100%;
+  }
+  .appBtns button {
+    width: 100%;
+    justify-content: center;
+  }
+}

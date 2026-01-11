@@ -1,0 +1,131 @@
+.heroSection {
+  padding: 4rem 0 0;
+  display: flex;
+  align-items: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  width: 1251px;
+  height: 479px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 80px;
+  color: #222;
+  width: 800px;
+}
+
+.title span {
+  background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 30px;
+  color: #000000;
+  max-width: 600px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.leftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 709px;
+  height: 467px;
+  justify-content: center;
+}
+
+.rightCol {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  width: 522px;
+  height: 479px;
+}
+
+.skylineImg {
+  width: 522px;
+  height: 479px;
+  object-fit: contain;
+}
+
+@media (max-width: 1251px) {
+  .heroContent {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .leftCol,
+  .rightCol,
+  .title,
+  .skylineImg {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  .title {
+    font-size: 60px;
+    line-height: 1.1;
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    margin: 0 auto;
+  }
+
+  .buttonGroup {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .rightCol {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 42px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 32px;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .buttonGroup button {
+    width: 100%;
+  }
+}

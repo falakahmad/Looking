@@ -1,0 +1,52 @@
+.section {
+  padding: 6rem 0 0; /* No bottom padding because image goes to edges */
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imageWrapper {
+  width: 100%;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.mockupImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-width: 1600px;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+}

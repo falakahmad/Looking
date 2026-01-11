@@ -1,0 +1,287 @@
+.header {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.title {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(60deg, #1d5fe8 13.4%, #003087 86.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #1a1a1c;
+  font-weight: 200;
+}
+
+.vizWrapper {
+  position: relative;
+  width: 100%;
+  height: calc(650px * var(--orbit-scale, 1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8rem;
+  transition: all 0.3s ease;
+  --orbit-scale: 1;
+}
+
+@media (max-width: 1200px) {
+  .vizWrapper {
+    --orbit-scale: 0.85;
+  }
+}
+
+@media (max-width: 1024px) {
+  .vizWrapper {
+    --orbit-scale: 0.75;
+    margin-bottom: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .vizWrapper {
+    --orbit-scale: 0.6;
+    margin-bottom: 2rem;
+  }
+  .orbitCard {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .vizWrapper {
+    --orbit-scale: 0.5;
+    margin-top: 2rem;
+  }
+}
+
+.orbits,
+.centerNode,
+.orbitItem {
+  transform: scale(var(--orbit-scale));
+  transform-origin: center;
+}
+
+.orbits {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orbitLine {
+  position: absolute;
+  border: 1.5px dashed rgba(29, 95, 232, 0.06);
+  border-radius: 50%;
+}
+
+.orbitLine:nth-child(1) {
+  width: 350px;
+  height: 350px;
+}
+.orbitLine:nth-child(2) {
+  width: 500px;
+  height: 500px;
+}
+.orbitLine:nth-child(3) {
+  width: 650px;
+  height: 650px;
+}
+
+.centerNode {
+  position: relative;
+  z-index: 10;
+  width: 260px;
+  height: 260px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.progressCircle {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.progressCircle svg {
+  transform: rotate(-90deg);
+}
+
+.track {
+  fill: none;
+  stroke: #eef5ff;
+  stroke-width: 6;
+}
+
+.progress {
+  fill: none;
+  stroke-width: 6;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 80;
+  stroke-linecap: round;
+}
+
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centerText h3 {
+  font-size: 56px;
+  font-weight: 800;
+  color: #1d5fe8;
+  margin-bottom: 0.1rem;
+}
+
+.centerText p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1a1a1c;
+}
+
+/* Orbiting Items Position Mapping - Grouped */
+.orbitItem {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 25;
+  gap: 0.8rem;
+}
+
+.avatarWrap {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.orbitCard {
+  background: #eef5ff;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(29, 95, 232, 0.08);
+  max-width: 170px;
+  text-align: left;
+  border: 1px solid #d0e3ff;
+}
+
+.orbitCard h4 {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+  color: #1a1a1c;
+}
+
+.orbitCard p {
+  font-size: 11px;
+  color: #666;
+  line-height: 1.3;
+}
+
+/* 4 Items Positions */
+.item1 {
+  top: 10%;
+  left: 26%;
+  transform: translateX(-50%);
+} /* Top Left */
+.item2 {
+  top: -6%;
+  right: 34%;
+} /* Right */
+.item3 {
+  bottom: 8%;
+  left: 62%;
+} /* Bottom Right */
+.item4 {
+  top: 72%;
+  left: 22%;
+  transform: translateY(-50%);
+} /* Left */
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.gridCard {
+  padding: 2.5rem 2rem;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.gridCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.iconBox {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 2rem;
+}
+
+.iconBox svg {
+  width: 100%;
+  height: 100%;
+}
+
+.gridTitle {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1a1a1c;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.gridDesc {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+@media (max-width: 1024px) {
+  .vizWrapper {
+    flex-direction: column;
+  }
+  .bottomGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .bottomGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .gridCard {
+    padding: 1.5rem 1rem;
+  }
+  .gridTitle {
+    font-size: 1.25rem;
+  }
+  .gridDesc {
+    font-size: 0.85rem;
+  }
+  .title {
+    font-size: 2.22rem;
+  }
+}

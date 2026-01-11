@@ -1,0 +1,196 @@
+.section {
+  padding: 6rem 0;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.sectionTitle {
+  font-size: 42px;
+  font-weight: 800;
+  background: linear-gradient(60deg, #1d5fe8 13.4%, #003087 86.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.marqueeWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.marqueeTrack {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scroll 40s linear infinite;
+  padding: 2rem 0; /* Space for shadows */
+}
+
+/* Pause animation on hover for readability */
+.marqueeTrack:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.reviewCard {
+  width: 400px;
+  background: #f8fbff;
+  border-radius: 24px; /* Bento style rounding */
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  white-space: normal; /* Allow text to wrap within the card */
+  flex-shrink: 0;
+  border: 1px solid rgba(29, 95, 232, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviewCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(29, 95, 232, 0.08);
+  border-color: rgba(29, 95, 232, 0.2);
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, #1d5fe8 0%, #003087 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(29, 95, 232, 0.2);
+}
+
+.userDetails {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0; /* Important for text truncation in flex items */
+}
+
+.userName {
+  font-family: Visby, var(--font-main);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a1a1c;
+  margin-bottom: 0.1rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userTitle {
+  font-family: Visby, var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #1d5fe8;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.1rem;
+}
+
+.userEmail {
+  font-family: Visby, var(--font-main);
+  font-size: 0.85rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content {
+  font-family: Visby, var(--font-main);
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.rating {
+  font-size: 1.1rem;
+  color: #fbbc05; /* Yellow stars */
+  display: flex;
+  gap: 0.2rem;
+}
+
+.loadingWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  min-height: 300px;
+  justify-content: center;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(29, 95, 232, 0.1);
+  border-top: 3px solid #1d5fe8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 32px;
+  }
+  .reviewCard {
+    width: 300px;
+    padding: 2rem;
+  }
+}

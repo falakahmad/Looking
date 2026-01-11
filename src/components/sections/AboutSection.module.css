@@ -1,0 +1,136 @@
+.aboutContent {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1280px;
+  height: 576px;
+  margin: 0 auto;
+}
+
+.leftCol {
+  position: relative;
+  width: 100%;
+  max-width: 485px;
+}
+
+.rightCol {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.imageBox {
+  width: 100%;
+}
+
+.aboutImg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 25px;
+  color: #0f0f0f;
+  margin-bottom: 2.5rem;
+  letter-spacing: 0%;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.featureItem {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+
+.checkIcon {
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.featureTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.featureDesc {
+  font-size: 18px;
+  color: #666;
+  font-weight: 200;
+  line-height: 1.3;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+  margin-top: auto;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 0.25rem;
+}
+
+.statLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0070f3;
+  letter-spacing: -0.2px;
+}
+
+@media (max-width: 1300px) {
+  .aboutContent {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 2rem 0;
+  }
+  .leftCol,
+  .rightCol {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+  .statValue {
+    font-size: 1.8rem;
+  }
+}

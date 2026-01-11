@@ -1,66 +1,72 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+
+import { useState, useEffect } from "react";
+import Navbar from "@/components/layout/Navbar";
+import Hero from "@/components/sections/Hero";
+import AuctionSection from "@/components/sections/AuctionSection";
+import CategoriesSection from "@/components/sections/CategoriesSection";
+import HowItWorksSection from "@/components/sections/HowItWorksSection";
+import WhyChooseSection from "@/components/sections/WhyChooseSection";
+import PremiumAdsSection from "@/components/sections/PremiumAdsSection";
+import AppChoiceSection from "@/components/sections/AppChoiceSection";
+import LiveAuctionDemo from "@/components/sections/LiveAuctionDemo";
+import ExperienceAppSection from "@/components/sections/ExperienceAppSection";
+import AuctionExperience from "@/components/sections/AuctionExperience";
+import AuctionTipsSection from "@/components/sections/AuctionTipsSection";
+import FAQSection from "@/components/sections/FAQSection";
+import AboutSection from "@/components/sections/AboutSection";
+import Reviews from "@/components/sections/Reviews";
+import CTA from "@/components/sections/CTA";
+import Footer from "@/components/layout/Footer";
+import en from "@/dictionaries/en.json";
+import ar from "@/dictionaries/ar.json";
+
+type Locale = "en" | "ar";
 
 export default function Home() {
+  const [locale, setLocale] = useState<Locale>("en");
+
+  const dict = locale === "en" ? en : ar;
+
+  const toggleLocale = () => {
+    setLocale((prev) => (prev === "en" ? "ar" : "en"));
+  };
+
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <main>
+      <div className="inner-rounded-container" id="home">
+        <Navbar
+          dict={dict}
+          currentLocale={locale}
+          onToggleLang={toggleLocale}
         />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+        <Hero dict={dict} />
+      </div>
+      <div id="auction">
+        <AuctionSection dict={dict} />
+      </div>
+      <div id="about">
+        <AboutSection dict={dict} />
+      </div>
+      <CategoriesSection dict={dict} />
+      <HowItWorksSection dict={dict} />
+      <div id="features">
+        <WhyChooseSection dict={dict} />
+      </div>
+      <PremiumAdsSection dict={dict} />
+      <AppChoiceSection dict={dict} />
+      <LiveAuctionDemo dict={dict} />
+      <div id="preview">
+        <ExperienceAppSection dict={dict} />
+      </div>
+      <AuctionExperience dict={dict} />
+      <AuctionTipsSection dict={dict} />
+      <div id="faqs">
+        <FAQSection dict={dict} />
+      </div>
+      <Reviews dict={dict} />
+      <CTA dict={dict} />
+      <Footer dict={dict} />
+    </main>
   );
 }

@@ -1,0 +1,166 @@
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #1d5fe8;
+  margin-bottom: 0.8rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  max-width: 1251px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 0 1 230px;
+  width: 100%;
+  max-width: 230px;
+  height: 274.57px; /* Fixed height as requested */
+  padding: 32px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #ffffff40;
+  backdrop-filter: blur(100.2px);
+  -webkit-backdrop-filter: blur(100.2px);
+  box-shadow: 0px 4px 10px 0px #0000001a;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.blueCard {
+  background: linear-gradient(
+    180deg,
+    rgba(29, 95, 232, 0.1) 0%,
+    rgba(29, 95, 232, 0.05) 100%
+  );
+}
+
+.yellowCard {
+  background: linear-gradient(
+    180deg,
+    rgba(252, 195, 23, 0.1) 0%,
+    rgba(252, 195, 23, 0.05) 100%
+  );
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+}
+
+.iconImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardTitle {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 140%;
+  color: #1a1a1c;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+  color: #1a1a1c;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.listings {
+  font-family: "Visby", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: auto;
+}
+
+.textBlue {
+  color: #1d5fe8;
+}
+
+.textYellow {
+  color: #fbbc05;
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 2.4rem;
+  }
+  .grid {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .grid {
+    gap: 20px;
+    padding: 0 20px;
+    justify-content: center;
+  }
+  .card {
+    flex: 0 0 calc(50% - 10px);
+    width: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    /* Removing all internal overrides to match desktop styles */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.75rem;
+  }
+}

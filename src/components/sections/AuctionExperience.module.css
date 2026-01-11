@@ -1,0 +1,137 @@
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #1a1a1c;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.primaryCard {
+  background-color: #1e5ce6;
+  color: white;
+  border: none;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.numberBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #005ce6;
+  color: white;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.primaryCard .numberBadge {
+  background-color: white;
+  color: #1e5ce6;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.cardDesc {
+  font-family: Visby, var(--font-main);
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.proTipBox {
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  background-color: #eef5ff;
+  border: 1px solid #1d5fe8;
+}
+
+.proTipContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.lightbulb {
+  font-size: 1.5rem;
+}
+
+.proTipContent p {
+  font-family: Visby, var(--font-main);
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #1a1a1c;
+  text-align: start;
+}
+
+.proTipContent strong {
+  font-family: Visby, var(--font-main);
+  font-weight: 800; /* Extrabold */
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #1e5ce6;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}

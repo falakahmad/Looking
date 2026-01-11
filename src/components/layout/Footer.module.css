@@ -1,0 +1,291 @@
+.footer {
+  padding: 0;
+  background-color: #ffffff;
+}
+
+.mainBox {
+  background-color: #eef5ff;
+  border-radius: 40px;
+  padding: 6rem 3rem; /* Reduced horizontal padding to allow more content width */
+  margin: 0 1rem 2rem; /* Reduced margins to make the box wider */
+}
+
+.ctaRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  margin-bottom: 4rem;
+}
+
+.ctaLeft {
+  flex: 1;
+}
+
+.waTitle {
+  font-size: 4.5rem;
+  font-weight: 800;
+  background: linear-gradient(60deg, #1d5fe8 13.4%, #003087 86.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  margin-bottom: 2rem;
+  max-width: 600px; /* Increased for wider feel */
+}
+
+.waSubtitle {
+  font-size: 1.15rem;
+  color: #555;
+  line-height: 1.5;
+  max-width: 480px;
+}
+
+.ctaRight {
+  flex: 1;
+  max-width: 600px; /* Increased to fill the extra width */
+}
+
+.inputLabel {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 58, 145, 0.05);
+  margin-bottom: 1.5rem;
+}
+
+.waInput {
+  flex: 1;
+  border: none;
+  padding: 0 1.5rem;
+  font-size: 1.1rem;
+  outline: none;
+  background: transparent;
+}
+
+.waButton {
+  background-color: #1e5ce6;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.waButton:hover {
+  background-color: #004dc2;
+}
+
+.waLegal {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.waLegal a {
+  color: #005ce6;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.05);
+  margin-bottom: 4rem;
+}
+
+.brandingCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logoBox {
+  margin-bottom: 2rem;
+}
+
+.footerLogo {
+  height: 46px; /* Balanced height */
+  width: auto;
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.storeBadges {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.badge {
+  transition: transform 0.2s ease;
+}
+
+.badge:hover {
+  transform: scale(1.03);
+}
+
+.navLinks {
+  display: flex;
+  gap: 4rem;
+  margin-bottom: 3.5rem;
+}
+
+.navLinks a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #1a1a1a;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: #005ce6;
+}
+
+.legalRows {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.legalRows a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #005ce6;
+}
+
+.sep {
+  color: #ccc;
+  font-weight: 300;
+}
+
+.deleteBtn {
+  color: #ff4d4f !important;
+}
+
+.bottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0.5rem;
+  margin: 0 1.5rem 4rem; /* Kept hero-aligned margin but increased spacing below */
+}
+
+.rights {
+  font-size: 1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socialBtn {
+  width: 44px;
+  height: 44px;
+  background-color: #1e5ce6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.socialBtn:hover {
+  transform: translateY(-3px);
+  background-color: #004dc2;
+}
+
+/* Base icon shape for demonstration as I don't have SVGs for all */
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+@media (max-width: 1200px) {
+  .waTitle {
+    font-size: 3.5rem;
+  }
+  .mainBox {
+    padding: 4rem 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ctaRow {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+  .waSubtitle {
+    margin: 0 auto;
+  }
+  .ctaRight {
+    max-width: 100%;
+  }
+  .navLinks {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainBox {
+    padding: 3rem 1.5rem;
+  }
+
+  .waTitle {
+    font-size: 2.5rem; /* Smaller for mobile */
+  }
+
+  .inputGroup {
+    flex-direction: column; /* Stack input and button */
+    padding: 10px;
+    border-radius: 20px;
+    gap: 10px;
+  }
+
+  .waInput {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+
+  .waButton {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .bottomRow {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+}

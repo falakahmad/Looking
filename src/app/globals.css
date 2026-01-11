@@ -1,27 +1,17 @@
+/* Using Visby as requested. Ensure font files are loaded or available in the environment */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --bg-color: #ffffff;
+  --hero-inner-bg: #eef5ff;
+  --primary-blue: #005ce6;
+  --primary-blue-hover: #004bbd;
+  --text-dark: #1a1a1a;
+  --text-muted: #555555;
+  --font-main: "Outfit", sans-serif;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --grad-start: #1d5fe8;
+  --grad-end: #003087;
 }
 
 * {
@@ -30,13 +20,252 @@ body {
   margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+body {
+  background-color: var(--bg-color);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.inner-rounded-container {
+  background-color: var(--hero-inner-bg);
+  border-radius: 40px;
+  margin: 1.5rem 1.5rem 6rem;
+  padding-top: 40px;
+  min-height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-blue {
+  background: linear-gradient(to bottom, var(--grad-start), var(--grad-end));
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-blue:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.btn-black {
+  background-color: #000;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-1px);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #1e5ce6;
+  padding: 0.7rem 1.2rem;
+  border-radius: 12px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn-white:hover {
+  background-color: #f8faff;
+  transform: translateY(-1px);
+}
+
+.btn-content {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+  .inner-rounded-container {
+    margin: 1rem 1rem 3rem;
+    border-radius: 24px;
+    padding-top: 30px;
+  }
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Google Translate Overrides */
+.goog-te-banner-frame.skiptranslate,
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+  position: static !important;
+}
+
+/* Container for the widget - hidden visually but accessible */
+#google_translate_element {
+  position: absolute !important;
+  opacity: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+  z-index: -1 !important;
+}
+
+/* Hide the Google Logo and "Powered by" text */
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+  font-size: 0 !important;
+}
+
+/* Style the dropdown button itself */
+.goog-te-gadget-simple {
+  background-color: #ffffff !important;
+  border: 1px solid #e5e7eb !important;
+  padding: 8px 12px !important;
+  border-radius: 99px !important;
+  font-size: 14px !important;
+  font-family: var(--font-main) !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+.goog-te-gadget-simple:hover {
+  background-color: #f9fafb !important;
+  transform: translateY(-1px);
+}
+
+.goog-te-gadget-simple .goog-te-menu-value {
+  color: #1a1a1c !important;
+  font-weight: 600 !important;
+  margin: 0 !important;
+  padding: 0 4px !important;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  color: #1a1a1c !important;
+  border: none !important;
+}
+
+/* Hide the default arrow if messy, or style it */
+.goog-te-gadget-simple .goog-te-menu-value span:last-child {
+  font-size: 10px !important; /* The arrow */
+  opacity: 0.5;
+}
+
+/* Fix Google Translate Dropdown Overflow */
+.goog-te-menu-frame {
+  left: auto !important;
+  right: 0 !important; /* Align to right edge */
+  max-width: 100vw !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 12px !important;
+}
+
+/* Translation Cloak (Loader) */
+html.translate-cloak body {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+html.translate-cloak {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Background + Logo */
+/* Background + Logo */
+html.translate-cloak::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #ffffff url("/logo.png") no-repeat center center;
+  background-size: 200px auto;
+  z-index: 2147483647;
+}
+
+/* Spinner */
+html.translate-cloak::after {
+  content: "";
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(220, 230, 240, 0.5); /* Lighter grey-blue for better visibility */
+  border-left-color: #005ce6;
+  border-radius: 50%;
+  animation: cloak-spin 1s linear infinite;
+  z-index: 2147483648;
+}
+
+@keyframes cloak-spin {
+  to {
+    transform: translateX(-50%) rotate(360deg);
   }
 }

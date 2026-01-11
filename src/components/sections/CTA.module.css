@@ -1,0 +1,90 @@
+.section {
+  padding: 6rem 0;
+}
+
+.ctaBox {
+  width: 100%;
+  max-width: 1209px;
+  min-height: 350px;
+  background-color: #1d5fe8;
+  border-radius: 30px;
+  padding: 60px 80px; /* Adjusting padding to center content visually as per image */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically if height is fixed */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcc317;
+  color: #1a1a1c; /* Dark text on yellow */
+  width: fit-content;
+  min-width: 176px;
+  height: 16px;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-family: Visby, var(--font-main);
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  gap: 5px;
+  /* Box sizing considerations */
+  box-sizing: content-box; /* Or adjust height to include padding */
+}
+
+/* Override height to match exactly if needed, but flex/padding usually better */
+.tag {
+  height: auto;
+  min-height: 16px;
+}
+
+.title {
+  font-family: Visby, var(--font-main);
+  font-weight: 600; /* Matching "Heavy" visual */
+  font-size: 52px;
+  line-height: 60px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  max-width: 350px;
+}
+
+.subtitle {
+  font-family: Visby, var(--font-main);
+  font-weight: 200; /* Regular/Medium */
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  max-width: 500px;
+  opacity: 1;
+}
+
+@media (max-width: 1024px) {
+  .ctaBox {
+    padding: 60px 40px;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaBox {
+    padding: 2.5rem;
+    border-radius: 20px;
+  }
+
+  .title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

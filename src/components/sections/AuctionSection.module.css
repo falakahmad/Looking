@@ -1,0 +1,202 @@
+.header {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 4rem;
+}
+
+.sectionTitle {
+  font-size: 42px;
+  font-weight: 800; /* Heavy style */
+  line-height: 100%;
+  background: linear-gradient(60deg, #1d5fe8 13.4%, #003087 86.6%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1.5rem;
+}
+
+.sectionSubtitle {
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 25px;
+  color: #1a1a1c;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1251px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* On very large screens, maintain the specific ratios */
+@media (min-width: 1251px) {
+  .grid {
+    grid-template-columns: 280px 280px 315.5px 315.5px;
+  }
+}
+
+.card {
+  padding: 40px 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  height: 400px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden; /* Prevent text overflow from breaking layout */
+}
+
+.largeCard,
+.wideCard {
+  grid-column: span 2;
+}
+
+.bottomCard {
+  height: 260px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.blueCard {
+  background-color: #1d5fe8;
+  color: white;
+}
+
+.greyCard {
+  background-color: #f4f6f9;
+  color: #1a1a1a;
+}
+
+.darkCard {
+  background-color: #1a1a1c;
+  color: white;
+}
+
+.iconBox {
+  width: 80px;
+  height: 80px;
+  background: white;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.cardTitle {
+  font-size: 38px;
+  font-weight: 600; /* Style: Extrabold */
+  line-height: 40px;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0%;
+}
+
+.cardTitleBlack {
+  font-size: 38px;
+  font-weight: 600; /* Style: Extrabold */
+  line-height: 40px;
+  margin-bottom: 1.2rem;
+  color: #1a1a1a;
+  letter-spacing: 0%;
+}
+
+.cardDesc {
+  font-size: 20px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.5rem;
+  font-weight: 200; /* Style: Medium */
+  max-width: 440px;
+  letter-spacing: 0%;
+}
+
+.cardDescMuted {
+  font-size: 20px;
+  line-height: 25px;
+  color: #666;
+  font-weight: 200; /* Style: Medium */
+  letter-spacing: 0%;
+}
+
+.btnRow {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+@media (max-width: 1251px) {
+  .grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    padding: 0 20px;
+  }
+
+  .largeCard,
+  .wideCard {
+    grid-column: span 1;
+    width: 100%;
+  }
+
+  .card {
+    height: auto;
+    min-height: 320px;
+    padding: 35px 25px;
+  }
+
+  .bottomCard {
+    height: auto;
+    min-height: 240px;
+  }
+
+  .cardTitle,
+  .cardTitleBlack {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .cardDesc,
+  .cardDescMuted {
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .btnRow {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btnRow button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .cardTitle,
+  .cardTitleBlack {
+    font-size: 26px;
+  }
+
+  .cardDesc,
+  .cardDescMuted {
+    font-size: 17px;
+  }
+}

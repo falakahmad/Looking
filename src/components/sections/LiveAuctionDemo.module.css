@@ -220,13 +220,55 @@
     flex-direction: column;
     gap: 20px;
     text-align: center;
+    padding: 20px 20px 0; /* Reduced padding */
   }
   .appBtns {
     flex-direction: column;
     width: 100%;
   }
-  .appBtns button {
+  .appBtns a {
+    /* Targeting the anchor tags now, not button */
     width: 100%;
     justify-content: center;
+  }
+
+  /* Bids List Responsiveness */
+  .bidItem {
+    padding: 15px 20px;
+  }
+  .bidderName {
+    font-size: 16px;
+  }
+  .bidTime {
+    font-size: 12px;
+  }
+  .bidAmount {
+    font-size: 18px;
+  }
+
+  /* Left Card tweaks */
+  .leftCard {
+    padding: 20px;
+  }
+  .productTitle {
+    font-size: 20px;
+  }
+  .productImageContainer {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+  .footerText {
+    font-size: 20px;
+  }
+  .cardHeader {
+    padding: 20px;
+  }
+  .recentBidTitle {
+    font-size: 24px;
   }
 }
